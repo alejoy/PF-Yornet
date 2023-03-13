@@ -1,0 +1,13 @@
+@import "variables.scss";
+
+body {
+  background-color: $background-color;
+}
+
+h1 {
+  color: $primary-color;
+}
+
+p {
+  color: $secondary-color;
+}
