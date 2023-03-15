@@ -370,7 +370,8 @@ footer ul {
 /* Contacto */
 
 .bodyContact{
-  background-image: url("../img/contact-bg.jpg");
+  /* background-image: url("../img/contact-bg.jpg"); */
+  background-color: #A7BCD1;
 }
 
 .headerContact {

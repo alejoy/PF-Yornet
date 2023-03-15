@@ -13,9 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!--CSS MAIN-->
     <link rel="stylesheet" href="./css/style.css">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="headerIndex">
@@ -61,20 +62,20 @@
             <article class="articleContainer">     
                 <div class="container text-center">
                     <div class="row">
-                        <div class="col">
+                        <div data-aos="zoom-in" class="col">
                             <img class="imgArticle rounded" src="./img/Cursos-1.png" alt="Cursos">
                             <h2>Cursos</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus eur ridiculus mus.</p>
+                            <p>Encontra aqui todos nuestros cursos!</p>
                         </div>
-                        <div class="col">
+                        <div data-aos="zoom-in" class="col">
                             <img class="imgArticle rounded" src="./img/Talleres.png" alt="Talleres">
-                            <h2>Jornadas</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus eur ridiculus mus.</p>
+                            <h2>Talleres</h2>
+                            <p>Te invitamos a que conozcas todos nuestros talleres.</p>
                         </div>
-                        <div class="col">
+                        <div data-aos="zoom-in" class="col">
                             <img class="imgArticle rounded" src="./img/Eventos.png" alt="Jornadas">
                             <h2>Jornadas</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus eur ridiculus mus.</p>
+                            <p>Jornada para el bienestar.</p>
                         </div>
                     </div>
                 </div>
@@ -102,7 +103,7 @@
             </div>
         </section>
         <section class="container text-center">
-            <div class="row mb-3 mt-5">
+            <div data-aos="zoom-in" class="row mb-3 mt-5">
                 <div class="col-lg-6 col-md-6 col-xl-12">
                 <img class="galleryPhoto" src="./img/massage-1030x687.jpg" alt="masaje">
                 <img class="galleryPhoto" src="./img/sauna_woman-468x705.jpg" alt="sauna">
@@ -206,5 +207,8 @@
   </footer>
     <!--Link BootStrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
