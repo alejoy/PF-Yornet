@@ -408,4 +408,13 @@ footer ul {
   opacity: 0.7;
 }
 
+@media (max-width: 600px) {
+  .author, .text {
+    display: none;
+  }
+  .headerAbout, .headerCursos, .headerContact, .headerIndex {
+    height: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
