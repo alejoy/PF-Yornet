@@ -1,10 +1,12 @@
+@import "_variables.scss";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
+html{
   font-size: 62.5%;
 }
 
@@ -40,12 +42,12 @@ nav a {
   padding: 10px;
   text-decoration: none;
   font-weight: bold;
-  color: #fff;
+  color: $background-color;
   font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-.textContainer {
+.textContainer{
   float: left;
   display: block;
   margin-top: 130px;
@@ -54,8 +56,8 @@ nav a {
 
 .text {
   font-size: 2.5rem;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  color: $background-color;
   font-weight: bold;
   width: 35%;
   line-height: 1.5;
@@ -64,8 +66,8 @@ nav a {
 .author {
   margin-top: 20px;
   font-size: 1.5rem;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  color: $background-color;
   width: 35%;
 }
 
@@ -74,36 +76,37 @@ nav a {
   text-align: center;
   margin-top: 50px;
   font-size: 4rem;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 100;
 }
 
-.mainContainer {
+.mainContainer{
   width: 70%;
   margin: auto;
   display: inline;
 }
-
 .textMain {
   text-align: center;
   font-size: 1.5rem;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   width: 70%;
   padding-top: 20px;
   margin: auto;
 }
 
 /* article section */
-.articleContainer {
+
+.articleContainer{
   overflow: hidden;
   margin: 60px 20px;
 }
+
 
 .article {
   text-align: center;
   margin-top: 10px;
   font-size: 1.5rem;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 100;
   float: left;
   width: 33.33%;
@@ -118,19 +121,19 @@ nav a {
 }
 
 /* newsletter section */
+
 .newsletterContainer {
-  background-color: #A7BCD1;
+  background-color: $secondary-color;
   background-image: url("../img/Newsletter.png");
   background-repeat: no-repeat;
   background-position-y: center;
   height: 296px;
 }
-
 .newsletterH3 {
   text-align: center;
   padding-top: 50px;
   font-size: 2rem;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 100;
   color: #000;
 }
@@ -142,35 +145,37 @@ nav a {
 
 .newsletterForm {
   border-radius: 2px;
-  color: #fff;
-  border-color: #fff;
+  color:$background-color;
+  border-color: $background-color;
   border-width: 2px;
   border-style: solid;
   background-color: transparent;
   margin-bottom: 0;
   display: inline;
   padding: 13px;
-}
 
+}
 ::placeholder {
-  color: #fff;
+  color: $background-color;
 }
 
-input:focus {
+input:focus { 
   outline: none;
-  border-color: #fff;
-  box-shadow: 0 0 10px #fff;
+  border-color: $background-color;
+  box-shadow: 0 0 10px $background-color;
 }
 
 /* gallery section */
+
 .gallery {
   text-align: center;
-  margin: 50px 10px;
+  margin: 50px 10px;    
 }
 
 .galleryContainer {
   width: 1200px;
   margin: auto;
+
 }
 
 .galleryPhoto {
@@ -178,7 +183,7 @@ input:focus {
   height: 266px;
   margin: 5px;
   opacity: 0.7;
-  transition: 0.5s ease;
+  transition: .5s ease;
 }
 
 .galleryPhoto:hover {
@@ -186,8 +191,9 @@ input:focus {
 }
 
 /* comments section */
+
 .space {
-  margin-bottom: 20px;
+  margin-bottom: 20px
 }
 
 /* footer section */
@@ -195,13 +201,12 @@ input:focus {
   position: relative;
   min-height: 100vh;
 }
-
-.contactfooter {
+.contactfooter{
   background-color: #f1f1f1;
-}
 
+}
 .content-wrap {
-  padding-bottom: 100px;
+  padding-bottom: 100px    /* Footer height */
 }
 
 .fix {
@@ -210,12 +215,13 @@ input:focus {
 }
 
 footer ul {
-  float: right;
-  list-style: none;
+  float:right;
+  list-style:none;
   margin: 10px 100px 0 0;
   font-weight: bold;
   font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .social-icons li {
@@ -226,14 +232,15 @@ footer ul {
 .social-icons a {
   color: #f0f9ff;
   transition: all 0.3s ease-in-out;
-  text-decoration: none;
+  text-decoration:none;
 }
 
 .social-icons a:hover {
-  color: #A7BCD1;
+  color: $secondary-color;
 }
 
 /* Cursos */
+
 .headerCursos {
   background-image: url("../img/banner-cursos.jpg");
   height: 720px;
@@ -249,14 +256,13 @@ footer ul {
   display: inline-block;
   width: 49%;
   vertical-align: middle;
-}
-
+}  
 .uno {
-  background-color: #A7BCD1;
+  background-color: $secondary-color;
   text-align: center;
   padding-top: 50px;
   font-size: 1.2rem;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 100;
   color: #000;
   position: relative;
@@ -266,16 +272,16 @@ footer ul {
 .dos {
   position: relative;
   vertical-align: middle;
-}
+} 
 
 .box {
-  margin-top: 25px !important;
+  margin-top: 25px!important;
 }
 
 .infoCurso {
   text-align: justify;
   font-size: 1.2rem;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 100;
   color: #000;
   padding: 10px;
@@ -284,7 +290,7 @@ footer ul {
 .button {
   align-items: center;
   padding: 6px 14px;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
   border-radius: 6px;
   border: none;
   background: #6E6D70;
@@ -294,13 +300,13 @@ footer ul {
 }
 
 /* Nosotros */
+
 .headerAbout {
   background-image: url("../img/young-woman-having-face-massage-relaxing-in-spa-salon.jpg");
   height: 720px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .aboutContainer {
   width: 1200px;
   margin: auto;
@@ -316,14 +322,14 @@ footer ul {
   text-align: center;
   margin: 50px 10px;
   width: 336px;
-  height: 266px;
+  height: 266px; 
 }
 
 .personName {
   text-align: center;
   margin: 10px;
   font-size: 1.9rem;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 100;
   color: #000;
 }
@@ -332,14 +338,15 @@ footer ul {
   text-align: center;
   margin: 10px;
   font-size: 1.5rem;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 100;
   color: #000;
 }
 
 /* Contacto */
-.bodyContact {
-  background-color: #A7BCD1;
+
+.bodyContact{
+  background-color: $secondary-color;
 }
 
 .headerContact {
@@ -350,7 +357,7 @@ footer ul {
   text-align: center;
   margin: 10px;
   font-size: 2.8rem;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   color: #000;
 }
@@ -359,11 +366,11 @@ footer ul {
   text-align: left;
   margin: 10px;
   font-size: 1.8rem;
-  font-family: "Quicksand", sans-serif;
-  color: #000;
+  font-family: 'Quicksand', sans-serif;
+  color: #000; 
 }
 
-.formContainer {
+.formContainer{
   text-align: center;
   width: 1200px;
   margin: auto;
@@ -372,8 +379,8 @@ footer ul {
 
 .textForm {
   border-radius: 2px;
-  color: #fff;
-  border-color: #fff;
+  color: $background-color;
+  border-color: $background-color;
   border-width: 2px;
   border-style: solid;
   background-color: transparent;
@@ -385,14 +392,16 @@ footer ul {
 .buttonEnviar {
   text-align: center;
   font-size: 1.7rem;
-  background-color: #A7BCD1;
-  color: #fff;
+  background-color: $secondary-color;
+  color: $background-color;
   border-color: #859ab0;
   width: 100px;
 }
 
+
 .card {
   border: none;
+
 }
 
 .card-img-top {
@@ -400,12 +409,10 @@ footer ul {
 }
 
 .btn-primary {
-  background-color: #A7BCD1;
-  border-color: #A7BCD1;
+  background-color: $secondary-color;
+  border-color: $secondary-color;
 }
 
 .card-img-top:hover {
   opacity: 0.7;
 }
-
-/*# sourceMappingURL=style.css.map */
